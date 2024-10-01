@@ -1,0 +1,164 @@
+/* Q#: All elements have a margin of 0 from the top, bottom, left, and right */
+* {
+    margin: 0;
+}
+
+/* Q1: Ensure HTML5 semantic elements behave as block-level elements */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+/* Q2: Apply styling to the <body> element */
+body {
+    color: #000000; 
+    background-image: url('../assets/images/dark-wood1.jpg');
+    background-size: cover; /* Background image covers the entire screen */
+    font-family: "Helvetica", "Arial", "Verdana" sans-serif;/*different font options*/
+    margin: 0; 
+}
+/* Q3: style div section*/
+div {
+    width: 950px;/*set the width*/
+    margin: 5px auto; /* 5px margin from top and bottom, auto centers the div horizontally */
+    background-color: #FFCC99; 
+}
+/* Q4: style content elements*/
+.content {
+    line-height: 1.4em; /* Set line height of the text to 1.4em */
+    padding: 10px; /* Add 10px padding to all sides  */
+}
+/* Q5: style header nav and footer elements*/
+header, nav, footer {
+    background-color: #666699; /* Dark background color */
+    color: #000000; /* Light foreground color */
+}
+/* Q6: style unordered list elements ul */
+nav ul {
+    margin: 0; /* Set margin to 0 on all sides */
+    padding: 5px; /* Add 5px padding on all sides */
+}
+/* Q7: style li elements*/
+nav ul li {
+    display: inline-block; /* Make list items display horizontally */
+    margin-right: 40px; /* Add 40px margin to the right of each item */
+    text-transform: uppercase; /* All text in uppercase */
+}
+/* Q8: add pseudo classes */
+nav ul li a:link {
+    color: #eba607; /* Normal, unvisited link color */
+}
+
+nav ul li a:visited {
+    color: #dfa499; /* Visited link color */
+}
+
+nav ul li a:hover {
+    color: #c7bab5; /* Color when hovering over the link */
+}
+
+nav ul li a:active {
+    color: #e01395; /* Color when the link is being clicked (active) */
+}
+/* Q9: style anchor elements */
+a {
+    color: #a4165f;
+    text-decoration: none; /* Remove the underline */
+}
+/* Q10 style the headings */
+h1, h2, h3 {
+    margin: 10px; /* 10px margin on all sides */
+    text-transform: uppercase; /* Make text uppercase */
+}
+
+h1 {
+    color: #2c3e50; /* Dark blue color for h1 */
+}
+
+h2 {
+    color: #8e44ad; /* Purple color for h2 */
+}
+
+h3 {
+    color: #16a085; /* Green color for h3 */
+}
+/* Q11: style class img centre */
+.img-centre {
+    display: block; /* Make the image a block-level element */
+    margin: 5px auto; /* 5px margin for top and bottom, auto centers the image horizontally */
+    padding: 2px; /* 2px padding on all sides */
+}
+/* Q12: style audio and video */
+audio, video {
+    display: block; /* Make the audio and video elements block-level */
+    margin: 10px auto; /* 10px margin for top and bottom, auto centers horizontally */
+}
+/* Q13: style table */
+table {
+    width: 800px; /* Set the width of the table to 800px */
+    margin: 10px auto; /* Center the table horizontally with 10px margin on top and bottom */
+    border-collapse: collapse; /* Collapse table borders */
+}
+/* Q14: style td and th */
+td, th {
+    border: 1px solid #35614d; /* Border settings  */
+    padding: 2px 5px; /* 2px padding for top/bottom, 5px for left/right */
+    background-color: #acdfd3; /* Light background color */
+}
+/* Q15: style th and td inside tfoot */
+th {
+    text-transform: uppercase; /* Make text uppercase for table headers */
+    background-color: #2c3e50; /* Background color for <th> */
+    color: #ffffff; /* text color in <th> */
+}
+
+tfoot td {
+    text-transform: uppercase; /* Make text uppercase for footer cells */
+    background-color: #684f60; /* Background color for <td> in <tfoot> */
+    color: #b6ddcc; /* Text color in <td> */
+}
+/* Q16: make it bold */
+dt {
+    font-weight: bold; /* Make the <dt> element bold */
+}
+/* Q17: style footer elements */
+footer {
+    font-size: 80%; /* Set font size to 80% */
+    text-align: center; /* Center align the text */
+    padding: 1px 0; /* Add 1px padding to top and bottom, 0 to left and right */
+}
+/* Q18: style iframe elements */
+iframe {
+    display: block; /* Make the iframe a block-level element */
+    margin: 10px auto; /* Add 10px margin for top and bottom, and center horizontally */
+}
+/* Q19: style fieldset elements */
+fieldset {
+    width: 500px; /* Set the width of the fieldset to 500px */
+    margin: 20px auto; /* Add 20px margin for top and bottom, and center horizontally */
+    border: 2px solid #007BFF; /* Add a solid border with a preferred color */
+    background-color: #f0f8ff; /* Set a light background color */
+}
+/* Q20: style legend elements */
+legend {
+    font-style: italic; /* Italic font style */
+    color: #ffffff; /* Text color */
+    background-color: #007BFF; /* Background color */
+    margin: 0 10px; /* 0 margin for top/bottom, 10px for left/right */
+    padding: 0 5px; /* 0 padding for top/bottom, 5px for left/right */
+    border: 2px solid #007BFF; /* Border color */
+    border-radius: 10px; /* Rounded border */
+}
+/* Q21: style input element */
+input[type="submit"] {
+    border: 2px solid #007BFF; /* Add a solid border with color */
+    padding: 5px; /* 5px padding on all sides */
+    background-color: #28a745; /* Background color */
+    color: #ffffff; /* text color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+/* Q22: style with pseudo class */
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Change background color on hover  */
+    color: #ffffff; /* Change text color on hover  */
+    cursor: pointer; /* Change cursor to pointer */
+}
